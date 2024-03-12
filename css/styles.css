@@ -3,8 +3,11 @@ body {
     color: #434455;
     background-color: #FFFFFF;
     width: 1440px;
+   
 
 }
+
+
 ul {
     list-style: none;
     margin-top: 0;
@@ -25,14 +28,25 @@ h1 h2 h3 h4 h5 h6 p {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+ 
 }
 .container {
 max-width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
+margin-left: 156px;
+margin-right: 156px;
 }
 
-.header-navigate {}
+.header-container {
+display: flex;
+}
+
+.header-navigate {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 
 .header-logo {
     font-family: "Raleway",sans-serif;
@@ -42,13 +56,17 @@ padding-right: 15px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-right: 76px;
 }
 
 .header-logo span {
     color: #2e2f42;
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+    gap: 40px;
+}
 
 .header-item {
     font-weight: 500;
@@ -56,6 +74,7 @@ padding-right: 15px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
 }
 .header-item-link {
     color: #2e2f42;
@@ -74,7 +93,11 @@ padding-right: 15px;
     font-style: normal;
 }
 
-.header-address-list {}
+.header-address-list {
+    display: flex;
+    margin-left: 332px;
+    gap: 40px;
+}
 
 .header-address-item {
     
@@ -98,6 +121,9 @@ font-size: 16px;
 
 .hero {
     background: #2e2f42;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-title {
@@ -121,11 +147,19 @@ font-size: 16px;
         color: #fff;
             background: #4d5ae5;
             cursor: pointer;
-            padding: 16px;
+            /* padding: 16px 32px; */
             margin-bottom: 188px;
-            width: 169px;
-            max-height: 56px;
+            margin-left: 480px;
+            margin-right: 479px;
+            /* width: 169px;
+            max-height: 56px; */
             text-align: center;
+            border-radius: 4px;
+               
+            width: 169px;
+                height: 56px;
+
+            
 
 }
 
@@ -147,11 +181,16 @@ background-color: #404bbf;}
 }
 
 .info-list {
+display: flex;
+    align-items: flex-start;
+  
 padding-top: 120px;
 padding-bottom: 116px;
 }
 
-.info-item {}
+.info-item {
+    width: calc((100%-2*24px)/4);
+}
 
 .info-item-subtitle {
     font-weight: 500;
@@ -159,6 +198,7 @@ padding-bottom: 116px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .info-item-text {
