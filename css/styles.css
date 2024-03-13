@@ -23,15 +23,20 @@ h1 h2 h3 h4 h5 h6 p {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+}
+
 /* ==================HEADER=================== */
 
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
  
 }
 .container {
-max-width: 1158px;
+width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: 156px;
@@ -46,6 +51,7 @@ display: flex;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo {
@@ -78,6 +84,7 @@ display: flex;
 }
 .header-item-link {
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-item-link:hover {
@@ -124,6 +131,7 @@ font-size: 16px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -140,6 +148,7 @@ font-size: 16px;
 }
 
 .hero-btn {
+    display: block;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -147,17 +156,17 @@ font-size: 16px;
         color: #fff;
             background: #4d5ae5;
             cursor: pointer;
-            /* padding: 16px 32px; */
+            border: none;
             margin-bottom: 188px;
             margin-left: 480px;
             margin-right: 479px;
-            /* width: 169px;
-            max-height: 56px; */
+           
             text-align: center;
             border-radius: 4px;
                
-            width: 169px;
+            min-width: 169px;
                 height: 56px;
+                
 
             
 
@@ -173,28 +182,42 @@ background-color: #404bbf;}
 
 /* ====================Our approach to the work======================== */
 
-.info {}
-
-.info-title {
-
-
+.info {
+    padding: 120px 0;
 }
+
+
+    .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+    
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+
 
 .info-list {
 display: flex;
     align-items: flex-start;
   
-padding-top: 120px;
-padding-bottom: 116px;
+/* padding-top: 120px;
+padding-bottom: 116px; */
 
 
-/* gap: 24px; */
+gap: 24px;
 }
 
 .info-item {
     padding-left: 24px;
         padding-right: 24px;
-    width: calc((100%-2*24px)/4);
+    width: width calc((100% - 3 * 24px) / 4);
 }
 
 .info-item-subtitle {
