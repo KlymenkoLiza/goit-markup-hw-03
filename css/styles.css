@@ -39,8 +39,9 @@ img {
 width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
-margin-left: 156px;
-margin-right: 156px;
+/* margin-left: 156px;
+margin-right: 156px; */
+margin: 0 auto;
 }
 
 .header-container {
@@ -123,8 +124,7 @@ font-size: 16px;
     color: #434455;
     font-style: normal;
 }
-
-/* =================HERO==================== */
+/* =================ПЕРША СЕКЦІЯ==================== */
 
 .hero {
     background: #2e2f42;
@@ -180,7 +180,7 @@ background-color: #404bbf;}
     background-color: #404bbf;
 }
 
-/* ====================Our approach to the work======================== */
+/* ====================ДРУГА СЕКЦІЯ======================== */
 
 .info {
     padding: 120px 0;
@@ -217,7 +217,7 @@ gap: 24px;
 .info-item {
     padding-left: 24px;
         padding-right: 24px;
-    width: width calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .info-item-subtitle {
@@ -237,13 +237,12 @@ gap: 24px;
         color: #434455;
 }
 
-/* ==================OUR TEAM======================== */
+/* ==================ТРЕТЯ СЕКЦІЯ======================== */
 
 .team {
     background: #f4f4fd;
     
-    padding-top: 124px;
-        padding-bottom: 116px;
+        padding: 120px 0
 }
 
 .team-title {
@@ -262,7 +261,12 @@ gap: 24px;
     gap: 24px;
     padding-left: 24px;
         padding-right: 24px;
-        width: calc((100% - 2 * 24px) / 4);
+        width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-cont {
+    padding: 32px 0;
 }
 
 .team-item-subtitle {
@@ -271,10 +275,12 @@ gap: 24px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        text-align: center;
+        margin-bottom: 8px;
 }
 
 .team-item-text {
-    
+    text-align: center;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
